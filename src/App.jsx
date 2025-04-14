@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-900 to-blue-950 text-white font-sans">
+    <div className="bg-gradient-to-r from-blue-900 to-blue-950 text-white font-sans overflow-x-hidden">
       {/* Menu Hamburguer para mobile */}
       <div className="md:hidden flex justify-between p-4">
         {/* <img src={logoAqua} alt="Logo Aqua" className="h-12 w-auto" /> */}
@@ -228,24 +228,14 @@ function App() {
 
       {/* CTA FINAL */}
       <section className="py-20 px-6 bg-blue-700 text-blue-300 text-center">
-        <h2 className="text-4xl font-bold mb-6" data-aos="fade-up">
-          Junte-se ao culto agora mesmo!
-        </h2>
+        <h2 className="text-4xl font-bold mb-6">Junte-se ao caos!</h2>
         <a
           href="https://discord.gg/VQGhyXNsQM"
-          className="relative inline-block px-8 py-4 rounded-full text-lg font-bold text-white bg-blue-800 overflow-hidden transition-all duration-300 hover:text-blue-900 hover:bg-white hover:shadow-[0_0_20px_#38bdf8] border border-blue-500"
-          data-aos="zoom-in"
+          className="text-xl bg-blue-500 py-3 px-8 rounded-full text-white font-bold"
         >
-          <span className="relative z-10">Invocar o Caos 🌊</span>
-          <span className="absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-20 transition-opacity duration-300 rounded-full"></span>
+          Entrar no Discord
         </a>
       </section>
-
-      {/* FOOTER */}
-      <footer className="bg-blue-900 py-6 text-center text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} Axis Cult 2.0 — O servidor mais
-        caótico do Discord.
-      </footer>
     </div>
   );
 }
