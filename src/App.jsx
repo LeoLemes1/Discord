@@ -27,9 +27,7 @@ function App() {
 
   return (
     <div className="bg-gradient-to-r from-blue-900 to-blue-950 text-white font-sans overflow-x-hidden">
-      {/* Menu Hamburguer para mobile */}
       <div className="md:hidden flex justify-between p-4">
-        {/* <img src={logoAqua} alt="Logo Aqua" className="h-12 w-auto" /> */}
         <button onClick={toggleMenu} className="text-3xl">
           {isOpen ? <FaTimes /> : <FaBars />}{" "}
         </button>
